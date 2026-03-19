@@ -26,7 +26,7 @@ class Atm:
        pin=input("Pls enter your pin: ")
        self.__pin=pin
        print("Pin created successfully")
-       balance=input("Enter your balance:")
+       balance=int(input("Enter your balance:"))
        self.__balance=balance
        print("You have successfully completed the process")
        self.menu()
@@ -47,7 +47,7 @@ class Atm:
           if withdrawn_amount<=self.__balance:
              amount=self.__balance-withdrawn_amount
              self.__balance=amount
-             print("""Withdrawn Successfully!!
+             print(f"""Withdrawn Successfully!!
                    Remaining balance: {self.__balance}""")
              self.menu()
           else:
@@ -58,6 +58,7 @@ class Atm:
        self.menu()
     def check_balance(self):
        print("your current amount is: ",self.__balance)
+        self.menu()
 
 sbi = Atm()
 
