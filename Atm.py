@@ -19,7 +19,7 @@ class Atm:
         elif user_input==3:
            self.withdraw_money()
         elif user_input==4:
-           self.check_balance
+           self.check_balance()
         else:
          print("Thank you for comming in our bank .Pls visit again")
     def create_pin(self):
