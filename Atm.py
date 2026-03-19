@@ -58,7 +58,7 @@ class Atm:
        self.menu()
     def check_balance(self):
        print("your current amount is: ",self.__balance)
-        self.menu()
+       self.menu()
 
 sbi = Atm()
 
@@ -66,9 +66,6 @@ sbi = Atm()
      
 
              
-          
-             
-        
 
         
 
